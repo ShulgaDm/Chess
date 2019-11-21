@@ -1,13 +1,13 @@
 <?php
 
 include 'class/Storage.php';
-include 'class/FileStorage.php';
+// include 'class/FileStorage.php';
 // include 'class/MysqlStorage.php';
-// include 'class/SessionStorage.php';
+include 'class/SessionStorage.php';
 include 'class/Board.php';
 
-// $storage = new SessionStorage('map');
-$storage = new FileStorage('figures.txt');
+$storage = new SessionStorage('map');
+// $storage = new FileStorage('figures.txt');
 // $storage = new MysqlStorage('mysql:host=localhost;dbname=CHESS;charset=utf8', 'root', '');
 $board = new Board($storage);
 
