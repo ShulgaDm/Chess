@@ -17,7 +17,7 @@ class MysqlStorage implements Storage {
 
     function load() {
         return $this->pdo
-            ->query("SELECT figures FROM Board")
+            ->query("SELECT figures FROM board")
             ->fetch()[0];
     }
 }
