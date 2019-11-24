@@ -19,15 +19,3 @@ if (isset($_GET['getFigures']))
 
 if (isset($_GET['moveFigure']))
     echo $board->moveFigure($_GET['frCoord'], $_GET['toCoord']);
-
-
-// if (isset($_GET['moveFigure'])) {
-//     $frCoord = $_GET['frCoord'];
-//     $toCoord = $_GET['toCoord'];
-//     $figures =$storage->load();
-//     $figure = $figures[$frCoord];
-//     $figures[$frCoord]='1';
-//     $figures[$toCoord]=$figure;
-//     $storage->save($figure);
-//     echo $storage->load();
-// }
